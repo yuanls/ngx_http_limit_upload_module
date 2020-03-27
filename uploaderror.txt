@@ -1,0 +1,105 @@
+2020/03/26 22:11:14 [debug] 23888#0: *7 http header done
+2020/03/26 22:11:14 [debug] 23888#0: *7 generic phase: 0
+2020/03/26 22:11:14 [debug] 23888#0: *7 limit upload: ctx=0000000000CED0D0
+2020/03/26 22:11:14 [debug] 23888#0: *7 rewrite phase: 1
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "*"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set $alloworigin
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "Content-type, X-Device"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set $allowheader
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script var
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script var: "POST"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "OPTIONS"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script equal
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script equal: no
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script if
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script if: false
+2020/03/26 22:11:14 [debug] 23888#0: *7 test location: "/unode/stor/"
+2020/03/26 22:11:14 [debug] 23888#0: *7 using configuration "/unode/stor/"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http cl:46140 max:0
+2020/03/26 22:11:14 [debug] 23888#0: *7 rewrite phase: 3
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "*"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set $alloworigin
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "Content-type, X-Device"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set $allowheader
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "10240"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set var handler
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "info"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set $limit_upload_rate_log_level
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "0"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set $limit_upload_rate_after
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: "0"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set $rate
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script var
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script value: ""
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script not equal
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script not equal: no
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script if
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script if: false
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script complex value
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script var: "0"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http script set var handler
+2020/03/26 22:11:14 [debug] 23888#0: *7 post rewrite phase: 4
+2020/03/26 22:11:14 [debug] 23888#0: *7 generic phase: 5
+2020/03/26 22:11:14 [debug] 23888#0: *7 generic phase: 6
+2020/03/26 22:11:14 [debug] 23888#0: *7 access phase: 7
+2020/03/26 22:11:14 [debug] 23888#0: *7 access phase: 8
+2020/03/26 22:11:14 [debug] 23888#0: *7 post access phase: 9
+2020/03/26 22:11:14 [debug] 23888#0: *7 generic phase: 10
+2020/03/26 22:11:14 [debug] 23888#0: *7 generic phase: 11
+2020/03/26 22:11:14 [debug] 23888#0: *7 http request body content length filter
+2020/03/26 22:11:14 [debug] 23888#0: *7 malloc: 0000000000D341B0:46140
+2020/03/26 22:11:14 [debug] 23888#0: *7 http read client request body
+2020/03/26 22:11:14 [debug] 23888#0: *7 recv: eof:0, avail:0
+2020/03/26 22:11:14 [debug] 23888#0: *7 http client request body recv -2
+2020/03/26 22:11:14 [debug] 23888#0: *7 http client request body rest 46140
+2020/03/26 22:11:14 [debug] 23888#0: *7 event timer add: 10: 60000:8168653
+2020/03/26 22:11:14 [debug] 23888#0: *7 http finalize request: -4, "/unode/stor/uploadPart" a:1, c:2
+2020/03/26 22:11:14 [debug] 23888#0: *7 http request count:2 blk:0
+2020/03/26 22:11:14 [debug] 23888#0: timer delta: 5
+2020/03/26 22:11:14 [debug] 23888#0: worker cycle
+2020/03/26 22:11:14 [debug] 23888#0: epoll timer: 60000
+2020/03/26 22:11:14 [debug] 23888#0: epoll: fd:10 ev:0001 d:00007F5FEE1041D1
+2020/03/26 22:11:14 [debug] 23888#0: *7 http run request: "/unode/stor/uploadPart"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http read client request body
+2020/03/26 22:11:14 [debug] 23888#0: *7 recv: eof:0, avail:-1
+2020/03/26 22:11:14 [debug] 23888#0: *7 recv: fd:10 14600 of 46140
+2020/03/26 22:11:14 [debug] 23888#0: *7 http client request body recv 14600
+2020/03/26 22:11:14 [debug] 23888#0: *7 http client request body rest 46140
+2020/03/26 22:11:14 [debug] 23888#0: *7 event timer: 10, old: 8168653, new: 8168654
+2020/03/26 22:11:14 [debug] 23888#0: timer delta: 1
+2020/03/26 22:11:14 [debug] 23888#0: worker cycle
+2020/03/26 22:11:14 [debug] 23888#0: epoll timer: 59999
+2020/03/26 22:11:14 [debug] 23888#0: epoll: fd:10 ev:0001 d:00007F5FEE1041D1
+2020/03/26 22:11:14 [debug] 23888#0: *7 http run request: "/unode/stor/uploadPart"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http read client request body
+2020/03/26 22:11:14 [debug] 23888#0: *7 recv: eof:0, avail:-1
+2020/03/26 22:11:14 [debug] 23888#0: *7 recv: fd:10 26280 of 31540
+2020/03/26 22:11:14 [debug] 23888#0: *7 http client request body recv 26280
+2020/03/26 22:11:14 [debug] 23888#0: *7 http client request body rest 46140
+2020/03/26 22:11:14 [debug] 23888#0: *7 event timer: 10, old: 8168653, new: 8168656
+2020/03/26 22:11:14 [debug] 23888#0: timer delta: 2
+2020/03/26 22:11:14 [debug] 23888#0: worker cycle
+2020/03/26 22:11:14 [debug] 23888#0: epoll timer: 59997
+2020/03/26 22:11:14 [debug] 23888#0: epoll: fd:10 ev:0001 d:00007F5FEE1041D1
+2020/03/26 22:11:14 [debug] 23888#0: *7 http run request: "/unode/stor/uploadPart"
+2020/03/26 22:11:14 [debug] 23888#0: *7 http read client request body
+2020/03/26 22:11:14 [debug] 23888#0: *7 recv: eof:0, avail:-1
+2020/03/26 22:11:14 [debug] 23888#0: *7 recv: fd:10 5260 of 5260
+2020/03/26 22:11:14 [debug] 23888#0: *7 recv: avail:0
+2020/03/26 22:11:14 [debug] 23888#0: *7 http client request body recv 5260
+2020/03/26 22:11:14 [debug] 23888#0: *7 http body new buf t:1 f:0 0000000000D341B0, pos 0000000000D341B0, size: 46140 file: 0, size: 0
+2020/03/26 22:11:14 [debug] 23888#0: *7 http dummy input body filter
+2020/03/26 22:11:14 [debug] 23888#0: *7 limit upload: ctx=0000000000CED0D0, received=46140, excess=35900, limit_rate=10240, period=1
+2020/03/26 22:11:14 [debug] 23888#0: *7 limit upload: delay=3505
+2020/03/26 22:11:14 [debug] 23888#0: *7 event timer add: 10: 3505:8112162
+2020/03/26 22:11:14 [debug] 23888#0: *7 event timer del: 10: 8168653
+2020/03/26 22:11:14 [debug] 23888#0: timer delta: 1
+2020/03/26 22:11:14 [debug] 23888#0: worker cycle
+2020/03/26 22:11:14 [debug] 23888#0: epoll timer: 3505
+2020/03/26 22:11:18 [debug] 23888#0: timer delta: 3510
+2020/03/26 22:11:18 [debug] 23888#0: *7 event timer del: 10: 8112162
+2020/03/26 22:11:18 [debug] 23888#0: *7 http run request: "/unode/stor/uploadPart"
+2020/03/26 22:11:18 [debug] 23888#0: *7 limit upload delay
+2020/03/26 22:11:18 [debug] 23888#0: *7 http read client request body
+2020/03/26 22:11:18 [debug] 23888#0: *7 http finalize request: 500, "/unode/stor/uploadPart" a:1, c:1
+2020/03/26 22:11:18 [debug] 23888#0: *7 http special response: 500, 
