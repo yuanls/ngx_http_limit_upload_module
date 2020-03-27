@@ -73,7 +73,7 @@ diff -ur nginx-1.15.8/src/http/ngx_http_request_body.c nginx-1.15.8-mod/src/http
  {
      ngx_buf_t                 *b;
      ngx_chain_t               *cl;
-+    ngx_int_t                 *rc;
++    ngx_int_t                 rc;
      ngx_http_request_body_t   *rb;
  
      rb = r->request_body;
